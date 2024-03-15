@@ -9,6 +9,9 @@ let gameTime = 0;
 let totalTime = parseInt(localStorage.getItem('totalTime')) || 0;
 let gamesPlayed = parseInt(localStorage.getItem('gamesPlayed')) || 0;
 let totalGuesses = parseInt(localStorage.getItem('totalGuesses')) || 0;
+// Initialize or retrieve the fastest win and longest game times
+let fastestWin = parseInt(localStorage.getItem('fastestWin')) || Infinity;
+let longestGame = parseInt(localStorage.getItem('longestGame')) || 0;
 
 function createGameBoard() {
     const gameElement = document.getElementById('game');
@@ -49,8 +52,12 @@ function submitGuess() {
 
     guesses.push(input);
     if (guesses.length > maxGuesses) {
-        stopTimer();
         alert("Max guesses reached. The word was " + solution + ". Refresh to play again.");
+        if (gameTime > longestGame) {
+            longestGame = gameTime; // Update if this game took longer than any previous game
+            localStorage.setItem('longestGame', longestGame);
+        }
+        stopTimer();
         alert("You lose!");
         resetGame();
         return;
@@ -58,8 +65,11 @@ function submitGuess() {
 
     updateGameBoard();
 
-    // Check for win condition
     if (input === solution) {
+        if (gameTime < fastestWin || fastestWin === Infinity) { // Check if it's the fastest win
+            fastestWin = gameTime;
+            localStorage.setItem('fastestWin', fastestWin);
+        }
         setTimeout(() => {
             alert("Congratulations!");
             stopTimer();
@@ -67,6 +77,10 @@ function submitGuess() {
         }, 100);
     } else if (guesses.length === maxGuesses) {
         setTimeout(() => {
+            if (gameTime > longestGame) {
+                longestGame = gameTime; // Update if this game took longer than any previous game
+                localStorage.setItem('longestGame', longestGame);
+            }
             alert("You lose! The word was " + solution + ". Refresh to play again.");
             stopTimer();
             resetGame();
