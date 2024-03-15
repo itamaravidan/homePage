@@ -1,4 +1,4 @@
-// Word bank associated with car accidents
+// Word bank associated with car accidentsxx
 const wordBank = ["CRASH", "BRAKE", "PHONE", "WRECK"];
 let solution = wordBank[Math.floor(Math.random() * wordBank.length)]; // Randomly select a solution
 
