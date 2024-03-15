@@ -15,7 +15,7 @@
     <footer>
         <p>&copy; 2024 Wordle Itamar, Hadar and Timor All rights reserved.</p>
     </footer>
-    <script>
+    <!-- <script>
         window.onload = function() {
             const params = new URLSearchParams(window.location.search);
             const time = params.get('time');
@@ -25,6 +25,23 @@
                 <p>Average number of guesses: ${guesses}</p>
             `;
         };
+    </script> -->
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const time = params.get('time') || localStorage.getItem('totalTime');
+            const guesses = params.get('guesses') || localStorage.getItem('totalGuesses');
+            const gamesPlayed = localStorage.getItem('gamesPlayed') || 0;
+            
+            const avgTime = gamesPlayed > 0 ? (time / gamesPlayed).toFixed(2) : "No data";
+            const avgGuesses = gamesPlayed > 0 ? (guesses / gamesPlayed).toFixed(2) : "No data";
+    
+            document.getElementById('playerStats').innerHTML = `
+                <p>Average time: ${avgTime} seconds</p>
+                <p>Average number of guesses: ${avgGuesses}</p>
+            `;
+        };
     </script>
+    
 </body>
 </html>
