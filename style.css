@@ -1,5 +1,36 @@
 @charset "UTF-8";
 
+
+#logoAndHead {
+    width: 60%;
+    color: black;
+    margin: 15px auto;
+    text-align: center;
+
+}
+
+#logoAndHead img {
+
+    width: 30%;
+    animation: bounce 1s infinite alternate;
+    /* Apply bounce animation */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        /* Adjust the distance you want the image to bounce */
+    }
+}
+
+
+
+
+
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
@@ -7,7 +38,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: white;
 }
 
 /* Header Styling */
