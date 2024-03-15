@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+
+#logoAndHead {
+    width: 60%;
+    color: black;
+    margin: 15px auto;
+    text-align: center;
+
+}
+
+#logoAndHead img {
+
+    width: 30%;
+    animation: bounce 1s infinite alternate;
+    /* Apply bounce animation */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        /* Adjust the distance you want the image to bounce */
+    }
+}
+
+
+
+
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+/* Header Styling */
+header {
+    background-color: #f8f9fa; /* Light grey background for a neutral look */
+    color: #212529; /* Dark grey text for contrast */
+    padding: 20px 0;
+    text-align: center;
+}
+
+#logoAndHead img {
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#logoAndHead p {
+    margin: 0 auto; /* Centering the paragraph */
+    padding: 0 15px; /* Adding some padding */
+    font-size: 1.1em;
+    max-width: 800px; /* Adjust as needed */
+}
+
+.navbar {
+    background-color: #343a40; /* Darker shade for a modern look */
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5em; /* Larger size for brand name */
+}
+
+.navbar-nav .nav-link {
+    color: #adb5bd; /* Light gray for a subtle look */
+    margin-right: 1em; /* Space out nav items */
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: #ffffff; /* Bright white on hover/focus for contrast */
+}
+
+.navbar-toggler {
+    border-color: #6c757d; /* Toggler icon border color */
+}
+
+.form-control {
+    border: 2px solid #6c757d; /* Border color for the search input */
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745; /* Green color for the search button to stand out */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        margin-right: 0.5em; /* Adjust spacing on smaller screens */
+    }
+}
+
+/* Adjust below as necessary for additional responsive behavior */
+
+/* Main Content Styling */
+main.container {
+    padding: 20px;
+}
+
+/* Recommended Articles & Statistics Section Styling */
+section {
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: #212529; /* Dark grey text for headings */
+}
+
+/* Ensure images are the same size without cropping */
+.article-thumbnails img,
+.statistics img {
+    height: 200px; /* Fixed height */
+    width: 100%; /* Full width */
+    object-fit: contain; /* Contain the image within the dimensions */
+    border-radius: 4px;
+    /* border: 1px solid #ddd; */
+}
+
+
+/* Set a specific height for images and make sure they cover the area without stretching */
+.article-thumbnails .column img,
+.statistics .column img {
+    object-fit: cover;
+    height: 200px; /* Adjust the height as needed to prevent cropping */
+}
+
+footer {
+    background-color: #212529; /* Dark footer background */
+    color: #f8f9fa; /* Light text for contrast */
+}
+
+footer h5 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li a {
+    color: #f8f9fa; /* Maintain text color on links */
+    text-decoration: none; /* Optional: Removes underline from links */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+footer .row {
+    align-items: center;
+}
+
+footer .border-top {
+    border-color: #dee2e6 !important; /* Light border for top line */
+}
+
+@media (max-width: 768px) {
+    footer .row {
+        text-align: center;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-thumbnails .column,
+    .statistics .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Add any additional styles you might need */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.column {
+    flex: 1;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}

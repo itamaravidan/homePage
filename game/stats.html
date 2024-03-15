@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wordle: Car Safety Edition - Stats</h1>
+    </header>
+    <div id="playerStats"></div>
+    <button onclick="window.close()">Close</button>
+    <footer>
+        <p>&copy; 2024 Wordle Itamar Avidan All rights reserved.</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const time = params.get('time');
+            const guesses = params.get('guesses');
+            document.getElementById('playerStats').innerHTML = `
+                <p>Average time: ${time} seconds</p>
+                <p>Average number of guesses: ${guesses}</p>
+            `;
+        };
+    </script>
+</body>
+</html>
