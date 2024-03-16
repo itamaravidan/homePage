@@ -10,7 +10,7 @@
     <div class="container">
         <h2>Driving Distraction Questionnaire</h2>
         <p>Please rate the following statements on a scale from 1 (Strongly Agree) to 5 (Do Not Agree At All).</p>
-        <form action="submit_form.php" method="post">
+        <form id="questionnaireForm">
             <div class="question">
                 <p>1. I often find myself using my phone while driving.</p>
                 <div class="scale">
@@ -116,6 +116,9 @@
 
             <button type="submit" class="submit-btn">Submit</button>
         </form>
+        <div id="messageContainer"></div>
     </div>
+
+    <script src="questionnaire.js"></script>
 </body>
 </html>

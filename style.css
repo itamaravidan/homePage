@@ -234,3 +234,44 @@ footer .border-top {
     height: 315px;
     border-radius: 10px;
 }
+
+.tooltip-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-item .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #4CAF50; /* Green background for the tooltip */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    transform: translateY(10px);
+    box-shadow: 0px 0px 10px #4CAF50; /* Green shadow for consistency */
+  }
+  
+  .tooltip-item:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-item.disabled {
+    color: #6c757d;
+    pointer-events: none;
+  }
+  
+  /* Optional: Change the hover color of dropdown items */
+  .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    background-color: #4CAF50; /* Lighter green for hover */
+  }
+  

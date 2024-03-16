@@ -10,7 +10,7 @@
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #495057; /* Changed to a darker gray */
+    color: #495057;
 }
 
 .question {
@@ -19,18 +19,6 @@ h2 {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    animation: fadeInUp 0.5s ease-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .question p {
@@ -52,7 +40,7 @@ h2 {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #6c757d; /* Changed to a gray color */
+    background-color: #6c757d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -63,4 +51,14 @@ h2 {
 
 .submit-btn:hover {
     background-color: #5a6268;
+}
+
+.highlight {
+    background-color: #ffcccc;
+}
+
+#messageContainer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #495057;
 }
