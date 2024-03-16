@@ -198,3 +198,10 @@ footer .border-top {
     padding: 0 15px;
     margin-bottom: 20px;
 }
+
+.article-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+}
