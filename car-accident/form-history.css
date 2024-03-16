@@ -1,0 +1,56 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 10%; /* Adjust the size of the logo */
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #47fc23;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.form-entry {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.no-history-message {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 600px) {
+    main {
+        width: 70%;
+    }
+}
