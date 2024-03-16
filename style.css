@@ -275,3 +275,67 @@ footer .border-top {
     background-color: #4CAF50; /* Lighter green for hover */
   }
   
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  .btn-success {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  .btn-success:hover {
+    background-color: #449D44;
+    border-color: #398439;
+  }
+  
+  /* Responsive video embeds */
+  .video-wrapper .embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-wrapper .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .preview-wrapper .game-preview {
+    background-size: contain; /* Ensures the full image is shown */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+  }
+  
+  .content-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+  }
+  
+  .btn-success {
+    display: block;
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .video-wrapper, .preview-wrapper {
+      margin-bottom: 30px;
+    }
+  
+    .preview-wrapper .game-preview {
+      background-size: cover; /* Adjusts for smaller screens */
+    }
+  }
+  
