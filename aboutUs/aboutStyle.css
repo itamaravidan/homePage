@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#about-logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#about-logo:hover {
+    transform: scale(1.05);
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-member {
+    flex: 0 0 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: #fff; /* Add a subtle background color */
+    border-radius: 10px; /* Rounded corners for the cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 10px; /* Ensure some space around the cards */
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    color: #333; /* Darker text color for the name */
+    font-size: 1.25rem; /* Slightly larger font size for the name */
+}
+
+.team-member p {
+    font-size: 0.9rem; /* Adjust the font size for the description */
+    color: #666; /* Lighter text color for the description */
+    line-height: 1.4; /* Improve line spacing */
+    margin-top: 10px;
+    background-color: rgba(245, 245, 245, 0.8); /* Light background for the text */
+    border-radius: 5px; /* Slight rounding of corners for the description background */
+    padding: 10px; /* Padding inside the description background */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-photo {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adds spacing between photo and name */
+}
+.team-photo:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 0 0 calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-member {
+        flex: 0 0 100%;
+    }
+}
