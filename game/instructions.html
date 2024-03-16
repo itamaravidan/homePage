@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Instructions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .content {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 700px;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        .instructions {
+            font-size: 1rem;
+            color: #666666;
+            line-height: 1.6;
+        }
+        .logo-link {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .logo-link img {
+            height: 100px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="logo-link">
+        <img src="../images/mainLogo.png" alt="Wordle: Car Safety Edition Logo" />
+    </a>
+    <div class="content">
+        <h1>How to Play Wordle</h1>
+        <p class="instructions">
+            Welcome to Wordle: Car Safety Edition! Here's how you play:
+            <ol>
+                <li>Guess the Wordle in six tries.</li>
+                <li>Each guess must be a valid five-letter word related to car safety. Hit the enter button to submit.</li>
+                <li>After each guess, the color of the tiles will change to show how close your guess was to the word.</li>
+                <li>Green - The letter is in the word and in the correct spot.</li>
+                <li>Yellow - The letter is in the word but in the wrong spot.</li>
+                <li>Gray - The letter is not in the word in any spot.</li>
+                <li>Use the clues to guess the word within six attempts.</li>
+            </ol>
+            Have fun, and drive safely!
+        </p>
+    </div>
+</body>
+</html>
