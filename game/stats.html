@@ -28,11 +28,16 @@
             </div>
         </div>
     </main>
-    <button onclick="window.close()">Close</button>
-    <footer>
-        <p>&copy; 2024 Wordle Itamar, Hadar, and Timor. All rights reserved.</p>
+    <footer class="stats-footer">
+        <div class="footer-content">
+            <a href="../index.html" class="footer-logo-link">
+                <img src="../images/mainLogo.png" alt="Wordle: Car Safety Edition Logo" class="footer-logo" />
+            </a>
+            <button onclick="window.close()" class="close-button">Close</button>
+        </div>
+        <p class="copyright">&copy; 2024 Wordle Itamar, Hadar, and Timor. All rights reserved.</p>
     </footer>
-    <script>
+        <script>
         window.onload = function() {
             const totalTime = parseInt(localStorage.getItem('totalTime')) || 0;
             const totalGuesses = parseInt(localStorage.getItem('totalGuesses')) || 0;

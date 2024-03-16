@@ -133,3 +133,38 @@ h2 {
 }
 
 /* Ensure your header has no more img #logo ID if you're not using it elsewhere */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust this as needed */
+    padding: 10px;
+    background-color: #fff; /* or any color that matches your design */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Optional for a subtle shadow under the header */
+}
+
+.stats-footer .footer-content {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    background-color: inherit; /* or any other color */
+}
+
+.stats-footer .footer-logo-link {
+    margin-right: 20px; /* Space between logo and close button */
+}
+
+.stats-footer .footer-logo {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+.stats-footer .close-button {
+    /* Your styles for the close button */
+}
+
+/* Ensure that copyright text is centered */
+.stats-footer .copyright {
+    text-align: center;
+    margin-top: 10px;
+}
