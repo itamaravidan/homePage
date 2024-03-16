@@ -205,3 +205,32 @@ footer .border-top {
     color: #6c757d;
     text-align: center;
 }
+
+.statistic-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+}
+
+
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h2 {
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 560px; /* Adjust based on your layout */
+    height: 315px;
+    border-radius: 10px;
+}
