@@ -26,23 +26,9 @@ $q9 = $_POST['Q9'];
 $q10 = $_POST['Q10'];
 
 
-
 $sql = "INSERT INTO Form_101 (Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10) 
 VALUES ('$q1', '$q2', '$q3', '$q3', '$q4', '$q5', '$q6', '$q7', '$q8', '$q9', '$q10')";
 
-/*
-$stmt= $conn->prepare("insert into Form_101(firstName, lastName, idNumber, birthDate, city, email, maritalStatus, HMO) values(?,?,?,?,?,?,?,?)");
-$stmt->bind_param("ssssssss",$firstName, $lastName, $idNumber, $birthdate, $city, $email, $maritalStatus, $hmo);
-$stmt->execute();
-*/
-
-
-if ($conn->query($sql)==FALSE) {
-    echo "Can not add new user. Error is: " . $conn->error;
-    exit();
-} else{
-    echo "The form is sent";
-}
 
 $conn->close();
 
