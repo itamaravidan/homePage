@@ -112,7 +112,7 @@ function updateGameBoard() {
 function showStats() {
     const avgTime = gamesPlayed > 0 ? (totalTime / gamesPlayed).toFixed(2) : 0;
     const avgGuesses = gamesPlayed > 0 ? (totalGuesses / gamesPlayed).toFixed(2) : 0;
-    const statsUrl = `stats.html?time=${avgTime}&guesses=${avgGuesses}`;
+    const statsUrl = `../includes/gameStats.html?time=${avgTime}&guesses=${avgGuesses}`;
     window.open(statsUrl, 'Player Stats', 'width=400,height=300');
 }
 

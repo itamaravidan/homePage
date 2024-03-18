@@ -10,7 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/homeStyle.css" />
   </head>
   <body>
     <header class="container-fluid">
@@ -42,8 +42,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./questionnaire/questionnaire.html">Questionnaire</a>
-            </li>    
+              <a class="nav-link" href="./includes/questionnaire.html"
+                >Questionnaire</a
+              >
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -57,20 +59,22 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownGame">
                 <li>
-                  <a class="dropdown-item" href="game/index.html">Game</a>
+                  <a class="dropdown-item" href="./includes/game.html">Game</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="game/stats.html">Game Data</a>
+                  <a class="dropdown-item" href="includes/gameStats.html"
+                    >Game Data</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/car accident/car-accident.html"
+              <a class="nav-link" href="./includes/car-accident.html"
                 >Add Accident</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./aboutUs/about.html">About Us</a>
+              <a class="nav-link" href="./includes/about.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -84,16 +88,26 @@
                 More
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-                <li class="tooltip-item"><span class="dropdown-item disabled">Statistics</span><span class="tooltiptext">Page not implemented</span></li>
-                <li class="tooltip-item"><span class="dropdown-item disabled">Articles</span><span class="tooltiptext">Page not implemented</span></li>
-              </ul>              
+                <li class="tooltip-item">
+                  <span class="dropdown-item disabled">Statistics</span
+                  ><span class="tooltiptext">Page not implemented</span>
+                </li>
+                <li class="tooltip-item">
+                  <span class="dropdown-item disabled">Articles</span
+                  ><span class="tooltiptext">Page not implemented</span>
+                </li>
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" action="https://www.google.com/search" method="get">
+          <form
+            class="d-flex"
+            action="https://www.google.com/search"
+            method="get"
+          >
             <input
               class="form-control me-2"
               type="search"
-              name="q" 
+              name="q"
               placeholder="What are you looking for?"
               aria-label="Search"
             />
@@ -101,40 +115,50 @@
               Search
             </button>
           </form>
-                  </div>
+        </div>
       </div>
     </nav>
     <section class="container my-5">
-        <div class="row">
-          <!-- Video Column -->
-<!-- Video Column -->
-<!-- Video Column -->
-<div class="col-md-6 video-wrapper">
-    <h2>Driving Safety Awareness</h2>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item"
-        src="https://www.youtube.com/embed/O8MQV40pOtk"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <p class="content-description">Check out our informative video on driving safety awareness and learn more about the importance of staying focused on the road.</p>
-  </div>
-  
-  <!-- Game Preview Column -->
-<!-- Game Preview Column -->
-<div class="col-md-6 preview-wrapper">
-    <h2>Game Sneak Peek</h2>
-    <a href="game/index.html" class="game-preview-link">
-      <div class="game-preview" style="background-image: url('./images/gamePeak.png');">
-        <!-- The background image is set to be the entire clickable area -->
+      <div class="row">
+        <!-- Video Column -->
+        <!-- Video Column -->
+        <!-- Video Column -->
+        <div class="col-md-6 video-wrapper">
+          <h2>Driving Safety Awareness</h2>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/O8MQV40pOtk"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <p class="content-description">
+            Check out our informative video on driving safety awareness and
+            learn more about the importance of staying focused on the road.
+          </p>
+        </div>
+
+        <!-- Game Preview Column -->
+        <!-- Game Preview Column -->
+        <div class="col-md-6 preview-wrapper">
+          <h2>Game Sneak Peek</h2>
+          <a href="./includes/game.html" class="game-preview-link">
+            <div
+              class="game-preview"
+              style="background-image: url('./images/gamePeak.png')"
+            >
+              <!-- The background image is set to be the entire clickable area -->
+            </div>
+          </a>
+          <p class="content-description">
+            Play our dont text and drive wordle game!
+          </p>
+        </div>
       </div>
-    </a>
-    <p class="content-description">Play our dont text and drive wordle game!</p>
-  </div>
-              </div>
-      </section>
-          <main class="container">
+    </section>
+    <main class="container">
       <section class="recommended-articles">
         <h2>Recommended Articles</h2>
         <div class="article-thumbnails">
@@ -236,13 +260,21 @@
           <h5>Follow Us</h5>
           <ul class="list-inline">
             <li class="list-inline-item">
-              <a href="https://twitter.com/Israel_MOT" class="text-white">Twitter</a>
+              <a href="https://twitter.com/Israel_MOT" class="text-white"
+                >Twitter</a
+              >
             </li>
             <li class="list-inline-item">
-              <a href="https://www.facebook.com/ralbad" class="text-white">Facebook</a>
+              <a href="https://www.facebook.com/ralbad" class="text-white"
+                >Facebook</a
+              >
             </li>
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/ralbad.il?igsh=MXlnZWhtZDlyajZs" class="text-white">Instagram</a>
+              <a
+                href="https://www.instagram.com/ralbad.il?igsh=MXlnZWhtZDlyajZs"
+                class="text-white"
+                >Instagram</a
+              >
             </li>
           </ul>
         </div>
@@ -259,8 +291,5 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    
-    
-    
   </body>
 </html>

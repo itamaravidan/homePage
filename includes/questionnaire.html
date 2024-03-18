@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driving Distraction Questionnaire</title>
-    <link rel="stylesheet" href="styleQuestionnaire.css">
-    <script src="questionnaire.js"></script>
+    <link rel="stylesheet" href="../css/styleQuestionnaire.css">
+    <script src="../JS/questionnaire.js"></script>
 </head>
 <body>
     <div class="header-logo">
@@ -17,7 +17,7 @@
     <div class="container">
         <h2>Driving Distraction Questionnaire</h2>
         <p>Please rate the following statements on a scale From 1(Strongly Agree) To 5(Do Not Agree At All) </p>
-        <form id="questionnaire-form">
+        <form id="questionnaire-form" method="post" action="../includes/Questionnaire.php">
             <!-- Question 1 -->
             <div class="question">
                 <p>1. I often find myself using my phone while driving.</p>
