@@ -46,7 +46,7 @@ function analyzeAnswers(answers) {
     // Generate insights based on scores
     let insights = "Your Distraction Level Insights:\n\n";
     if (scoreCounts[1] > 5) {
-        insights += "You seem to be highly distracted while driving, which can be extremely dangerous. It is important to prioritize safety over phone use while on the road.\n";
+        insights += "You seem to be highly distracted while driving, which can be extremely dangerous. It is important to prioritize safety over phone use while on the road.\nAccording to the answers to the questionnaire, you are diagnosed with distraction theory - a phenomenon in which attention is diverted from the main object of attention to a distracting factor. Distraction can have negative or positive effects, depending on the situation and context in which the person is. When driving, distraction theory is dangerous and can lead to many accidents, so you must Avoid this and be focused on driving only.";
     } else if (scoreCounts[5] > 5) {
         insights += "You appear to be very mindful of your driving and not easily distracted by your phone. Keep up the good work and continue to drive safely.\n";
     } else {
