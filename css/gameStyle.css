@@ -26,7 +26,6 @@ body {
     align-items: center;
     font-size: 30px;
     font-weight: bold;
-    /* background-color: #fff; */
     transition: transform 0.2s;
 }
 
@@ -41,7 +40,6 @@ body {
 }
 
 .correct {
-    /* background-color: #4caf50; */
     background-color: green;
 }
 
@@ -103,18 +101,17 @@ h2 {
 
 .logo-link {
     display: inline-block;
-    margin-right: 20px; /* Adjust spacing between logo and title as needed */
+    margin-right: 20px; 
 }
 
 #logo {
-    height: 50px; /* Adjust the size as needed */
+    height: 50px; 
     width: auto;
 }
 
-/* Add to your existing style.css */
 .stats-logo-container {
     display: flex;
-    justify-content: flex-end; /* Aligns items to the right */
+    justify-content: flex-end; 
     align-items: center; /* Centers items vertically */
     padding: 10px;
     /* Adjust the margin as needed */

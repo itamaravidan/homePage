@@ -110,9 +110,6 @@ footer{
 }
 
 
-
-
-/* popup */
 .popup {
     display: none;
     position: fixed;
@@ -178,7 +175,6 @@ footer{
     margin-left: 60%;
 }
 
-/* Media queries for responsiveness */
 @media only screen and (min-width: 600px) {
     form {
         width: 70%; 
@@ -186,7 +182,6 @@ footer{
 }
 
 
-/* Media queries for phone screens */
 @media only screen and (max-width: 480px) {
     form {
         padding: 8%;

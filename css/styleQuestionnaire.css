@@ -15,9 +15,8 @@ body, html {
 }
 
 .header-logo a img {
-    height: 100px; /* Or whatever size you prefer */
+    height: 100px; 
 }
-
 .container {
     max-width: 600px;
     margin: 40px auto;
@@ -38,7 +37,6 @@ h2 {
     margin: 20px 0;
     padding: 20px;
     background-color: #f9f9f9;
-    /* border-left: 4px solid #007bff; */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -108,8 +106,6 @@ h2 {
     }
 }
 
-
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;

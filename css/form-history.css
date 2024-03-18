@@ -1,4 +1,5 @@
-/* Global styles */
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -7,9 +8,9 @@ body {
 }
 
 #logo {
-    width: 10%; /* Adjust the size of the logo */
+    width: 10%; 
     display: block;
-    margin: 0 auto; /* Center the logo horizontally */
+    margin: 0 auto; 
 }
 
 a {
@@ -48,7 +49,6 @@ main {
 }
 
 
-/* Media queries for responsiveness */
 @media only screen and (min-width: 600px) {
     main {
         width: 70%;
