@@ -329,4 +329,120 @@ footer .border-top {
       background-size: cover; 
     }
   }
+
+
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding: 40px 0;
+    background: #fff; /* Adjust the background as needed */
+    padding: 40px 0;
+    flex-direction: column;
+
+}
+
+.about-container h2 {
+    margin-bottom: 30px;
+  }
+
+
+.team-member {
+    flex: 0 0 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+    margin-bottom: 20px;
+
+
+}
+
+
+.team-photo {
+    border-radius: 50%;
+    max-width: 100px; /* Adjust the size as needed */
+    margin-bottom: 15px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+
+  
+
+.team-member h3 {
+    margin-top: 15px;
+    color: #333; 
+    font-size: 1.25rem; 
+}
+
+.team-member p {
+    font-size: 0.9rem; 
+    color: #666; 
+    line-height: 1.4; 
+    margin-top: 10px;
+    background-color: rgba(245, 245, 245, 0.8); 
+    border-radius: 5px; 
+    padding: 10px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-photo {
+    width: 150px; 
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px; 
+}
+.team-photo:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 0 0 calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-member {
+        flex: 0 0 100%;
+    }
+}
+
+.about-section {
+    background: #f8f9fa; /* Adjust the background color as needed */
+    padding: 20px 0;
+  }
+  
+  .about-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Adjust the font size as needed */
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* This will give space between the team-member cards if they wrap */
+  }
   
