@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Insights</title>
+    <link rel="stylesheet" href="../css/styleQuestionnaire.css"> <!-- You can use the same CSS file or create a new one for styling -->
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="../index.html">
+                <img src="../images/mainLogo.png" alt="PhoneFreeDrive Logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Your Questionnaire Insights</h2>
+            <div id="insights-content">
+                <!-- Insights will be loaded here -->
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const insightsContent = document.getElementById('insights-content');
+            const insights = localStorage.getItem('questionnaireInsights');
+            
+            if (insights) {
+                insightsContent.textContent = insights;
+            } else {
+                insightsContent.textContent = 'No insights available. Please complete the questionnaire.';
+            }
+        });
+    </script>
+</body>
+</html>
