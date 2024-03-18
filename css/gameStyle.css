@@ -112,57 +112,51 @@ h2 {
 .stats-logo-container {
     display: flex;
     justify-content: flex-end; 
-    align-items: center; /* Centers items vertically */
+    align-items: center; 
     padding: 10px;
-    /* Adjust the margin as needed */
+    
 }
 
 .stats-link {
-    margin-right: 10px; /* Adds some space between the text and the logo */
+    margin-right: 10px; 
     text-decoration: none;
-    color: #000; /* or any color you prefer */
+    color: #000; 
     font-weight: bold;
 }
 
 .small-logo {
-    width: 50px; /* Adjust the width as needed */
+    width: 50px; 
     height: auto;
 }
 
-/* Ensure your header has no more img #logo ID if you're not using it elsewhere */
+
 .top-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust this as needed */
+    justify-content: space-between; 
     padding: 10px;
-    background-color: #fff; /* or any color that matches your design */
-    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Optional for a subtle shadow under the header */
+    background-color: #fff; 
+    
 }
 
 .stats-footer .footer-content {
     display: flex;
-    justify-content: center; /* Center the content */
-    align-items: center; /* Align items vertically */
+    justify-content: center;
+    align-items: center; 
     padding: 20px;
-    background-color: inherit; /* or any other color */
+    background-color: inherit; 
 }
 
 .stats-footer .footer-logo-link {
-    margin-right: 20px; /* Space between logo and close button */
+    margin-right: 20px; 
 }
 
 .stats-footer .footer-logo {
-    height: 50px; /* Adjust as needed */
+    height: 50px; 
     width: auto;
 }
 
-.stats-footer .close-button {
-    /* Your styles for the close button */
-}
-
-/* Ensure that copyright text is centered */
 .stats-footer .copyright {
     text-align: center;
     margin-top: 10px;
 }
-

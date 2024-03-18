@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle Instructions</title>
     <link rel="stylesheet" href="../css/instructions.css">
-
 </head>
+
 <body>
-    <a href="../index.html" class="logo-link">
-        <img src="../images/mainLogo.png" alt="Wordle: Car Safety Edition Logo" />
-    </a>
-    <div class="content">
-        <h1>How to Play Wordle</h1>
-        <p class="instructions">
-            Welcome to Wordle: Car Safety Edition! Here's how you play:
+    <header>
+        <a href="../index.html" class="logo-link">
+            <img src="../images/mainLogo.png" alt="Wordle: Car Safety Edition Logo" />
+        </a>
+    </header>
+    <main>
+        <div class="content">
+            <h1>How to Play Wordle</h1>
+            <p class="instructions">
+                Welcome to Wordle: Car Safety Edition! Here's how you play:
             <ol>
                 <li>Guess the Wordle in six tries.</li>
-                <li>Each guess must be a valid five-letter word related to car safety. Hit the enter button to submit.</li>
-                <li>After each guess, the color of the tiles will change to show how close your guess was to the word.</li>
+                <li>Each guess must be a valid five-letter word related to car safety. Hit the enter button to submit.
+                </li>
+                <li>After each guess, the color of the tiles will change to show how close your guess was to the word.
+                </li>
                 <li>Green - The letter is in the word and in the correct spot.</li>
                 <li>Yellow - The letter is in the word but in the wrong spot.</li>
                 <li>Gray - The letter is not in the word in any spot.</li>
                 <li>Use the clues to guess the word within six attempts.</li>
             </ol>
             Have fun, and drive safely!
-        </p>
-    </div>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <button onclick="window.location.href='./game.html'">Back to Game</button>
+    </footer>
+
 </body>
+
 </html>

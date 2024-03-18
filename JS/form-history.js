@@ -34,5 +34,4 @@ function displayFormHistory() {
     formHistoryContainer.innerHTML = historyHTML;
 }
 
-// Call displayFormHistory on page load
 displayFormHistory();

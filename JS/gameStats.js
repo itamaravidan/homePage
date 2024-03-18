@@ -1,4 +1,4 @@
-// stats.js
+
 window.onload = function() {
     const totalTime = parseInt(localStorage.getItem('totalTime')) || 0;
     const totalGuesses = parseInt(localStorage.getItem('totalGuesses')) || 0;

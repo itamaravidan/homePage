@@ -32,6 +32,26 @@ document.addEventListener('DOMContentLoaded', function() {
         // Display the insights in the modal
         insightsText.textContent = insights;
         modal.style.display = 'block';
+
+        // Now submit the form data to the server
+        const formData = new FormData(form);
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            // You can do something with the response data if needed
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
     });
 });
 
@@ -54,12 +74,5 @@ function analyzeAnswers(answers) {
     }
 
     // You can add more complex analysis based on the combination of answers
-    return insights;
-}
-
-function showInsightsPopup(insights) {
-    const modalContent = document.querySelector('.modal-content');
-    modalContent.innerHTML = `<h2>Your Insights</h2><p>${insights}</p>`;
-    const modal = document.querySelector('.modal');
-    modal.style.display = 'block';
+    return insights;
 }

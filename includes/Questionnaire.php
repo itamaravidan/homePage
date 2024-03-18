@@ -13,22 +13,25 @@ if($conn->connect_error){
     die("Connection failed: ".$conn->connect_error);
 }
 
+$q1 = $_POST['q1'];
+$q2 = $_POST['q2'];
+$q3 = $_POST['q3'];
+$q4 = $_POST['q4'];
+$q5 = $_POST['q5'];
+$q6 = $_POST['q6'];
+$q7 = $_POST['q7'];
+$q8 = $_POST['q8'];
+$q9 = $_POST['q9'];
+$q10 = $_POST['q10']; 
 
-$q1 = $_POST['Q1'];
-$q2 = $_POST['Q2'];
-$q3 = $_POST['Q3'];
-$q4 = $_POST['Q4'];
-$q5 = $_POST['Q5'];
-$q6 = $_POST['Q6'];
-$q7 = $_POST['Q7'];
-$q8 = $_POST['Q8'];
-$q9 = $_POST['Q9'];
-$q10 = $_POST['Q10'];
+$sql = "INSERT INTO Questionnaire (q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) 
+VALUES ($q1', '$q2', '$q3', '$q4', '$q5', '$q6', '$q7', '$q8', '$q9', '$q10')";
 
-
-$sql = "INSERT INTO Form_101 (Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10) 
-VALUES ('$q1', '$q2', '$q3', '$q3', '$q4', '$q5', '$q6', '$q7', '$q8', '$q9', '$q10')";
-
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
 $conn->close();
 

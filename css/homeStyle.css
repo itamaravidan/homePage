@@ -13,7 +13,7 @@
 
     width: 30%;
     animation: bounce 1s infinite alternate;
-    /* Apply bounce animation */
+    
 }
 
 @keyframes bounce {
@@ -23,15 +23,11 @@
 
     100% {
         transform: translateY(-10px);
-        /* Adjust the distance you want the image to bounce */
+        
     }
 }
 
 
-
-
-
-/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -41,57 +37,57 @@ body {
     background: white;
 }
 
-/* Header Styling */
+
 header {
-    background-color: #f8f9fa; /* Light grey background for a neutral look */
-    color: #212529; /* Dark grey text for contrast */
+    background-color: #f8f9fa; 
+    color: #212529; 
     padding: 20px 0;
     text-align: center;
 }
 
 #logoAndHead img {
-    max-width: 150px; /* Adjust as needed */
+    max-width: 150px; 
     height: auto;
     margin-bottom: 20px;
 }
 
 #logoAndHead p {
-    margin: 0 auto; /* Centering the paragraph */
-    padding: 0 15px; /* Adding some padding */
+    margin: 0 auto; 
+    padding: 0 15px; 
     font-size: 1.1em;
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px; 
 }
 
 .navbar {
-    background-color: #343a40; /* Darker shade for a modern look */
+    background-color: #343a40; 
 }
 
 .navbar-brand {
     color: #ffffff;
     font-weight: bold;
-    font-size: 1.5em; /* Larger size for brand name */
+    font-size: 1.5em; 
 }
 
 .navbar-nav .nav-link {
-    color: #adb5bd; /* Light gray for a subtle look */
-    margin-right: 1em; /* Space out nav items */
+    color: #adb5bd; 
+    margin-right: 1em; 
 }
 
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
-    color: #ffffff; /* Bright white on hover/focus for contrast */
+    color: #ffffff; 
 }
 
 .navbar-toggler {
-    border-color: #6c757d; /* Toggler icon border color */
+    border-color: #6c757d; 
 }
 
 .form-control {
-    border: 2px solid #6c757d; /* Border color for the search input */
+    border: 2px solid #6c757d; 
 }
 
 .btn-outline-success {
     color: #28a745;
-    border-color: #28a745; /* Green color for the search button to stand out */
+    border-color: #28a745; 
 }
 
 .btn-outline-success:hover {
@@ -101,18 +97,16 @@ header {
 
 @media (max-width: 992px) {
     .navbar-nav .nav-link {
-        margin-right: 0.5em; /* Adjust spacing on smaller screens */
+        margin-right: 0.5em; 
     }
 }
 
-/* Adjust below as necessary for additional responsive behavior */
 
-/* Main Content Styling */
 main.container {
     padding: 20px;
 }
 
-/* Recommended Articles & Statistics Section Styling */
+
 section {
     padding-bottom: 20px;
 }
@@ -120,30 +114,28 @@ section {
 h2 {
     text-align: center;
     padding: 20px 0;
-    color: #212529; /* Dark grey text for headings */
+    color: #212529;
 }
 
-/* Ensure images are the same size without cropping */
 .article-thumbnails img,
 .statistics img {
-    height: 200px; /* Fixed height */
-    width: 100%; /* Full width */
-    object-fit: contain; /* Contain the image within the dimensions */
+    height: 200px;
+    width: 100%; 
+    object-fit: contain; 
     border-radius: 4px;
-    /* border: 1px solid #ddd; */
+    
 }
 
 
-/* Set a specific height for images and make sure they cover the area without stretching */
 .article-thumbnails .column img,
 .statistics .column img {
     object-fit: cover;
-    height: 200px; /* Adjust the height as needed to prevent cropping */
+    height: 200px; 
 }
 
 footer {
-    background-color: #212529; /* Dark footer background */
-    color: #f8f9fa; /* Light text for contrast */
+    background-color: #212529; 
+    color: #f8f9fa; 
 }
 
 footer h5 {
@@ -155,12 +147,12 @@ footer ul {
 }
 
 footer ul li a {
-    color: #f8f9fa; /* Maintain text color on links */
-    text-decoration: none; /* Optional: Removes underline from links */
+    color: #f8f9fa; 
+    text-decoration: none; 
 }
 
 footer ul li a:hover {
-    text-decoration: underline; /* Optional: Adds underline on hover */
+    text-decoration: underline; 
 }
 
 footer .row {
@@ -168,7 +160,7 @@ footer .row {
 }
 
 footer .border-top {
-    border-color: #dee2e6 !important; /* Light border for top line */
+    border-color: #dee2e6 !important; 
 }
 
 @media (max-width: 768px) {
@@ -177,7 +169,7 @@ footer .border-top {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .article-thumbnails .column,
     .statistics .column {
@@ -186,7 +178,7 @@ footer .border-top {
     }
 }
 
-/* Add any additional styles you might need */
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -230,7 +222,7 @@ footer .border-top {
 
 .video-section iframe {
     width: 100%;
-    max-width: 560px; /* Adjust based on your layout */
+    max-width: 560px; 
     height: 315px;
     border-radius: 10px;
 }
@@ -243,7 +235,7 @@ footer .border-top {
   .tooltip-item .tooltiptext {
     visibility: hidden;
     width: 160px;
-    background-color: #4CAF50; /* Green background for the tooltip */
+    background-color: #4CAF50; 
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -256,7 +248,7 @@ footer .border-top {
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
     transform: translateY(10px);
-    box-shadow: 0px 0px 10px #4CAF50; /* Green shadow for consistency */
+    box-shadow: 0px 0px 10px #4CAF50; 
   }
   
   .tooltip-item:hover .tooltiptext {
@@ -269,10 +261,9 @@ footer .border-top {
     color: #6c757d;
     pointer-events: none;
   }
-  
-  /* Optional: Change the hover color of dropdown items */
+
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-    background-color: #4CAF50; /* Lighter green for hover */
+    background-color: #4CAF50;
   }
   
   .my-5 {
@@ -290,10 +281,10 @@ footer .border-top {
     border-color: #398439;
   }
   
-  /* Responsive video embeds */
+ 
   .video-wrapper .embed-responsive {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
   }
@@ -307,11 +298,11 @@ footer .border-top {
   }
   
   .preview-wrapper .game-preview {
-    background-size: contain; /* Ensures the full image is shown */
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; 
     position: relative;
   }
   
@@ -328,14 +319,14 @@ footer .border-top {
     margin-top: 10px;
   }
   
-  /* Responsive adjustments */
+ 
   @media (max-width: 767px) {
     .video-wrapper, .preview-wrapper {
       margin-bottom: 30px;
     }
   
     .preview-wrapper .game-preview {
-      background-size: cover; /* Adjusts for smaller screens */
+      background-size: cover; 
     }
   }
   

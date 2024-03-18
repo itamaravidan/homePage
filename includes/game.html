@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle Clone</title>
     <link rel="stylesheet" href="../css/gameStyle.css">
 </head>
+
 <body>
     <header>
         <h1>Wordle: Car Safety Edition</h1>
     </header>
+
     <div id="game"></div>
     <input type="text" id="guessInput" maxlength="5" placeholder="Enter your guess">
     <button onclick="submitGuess()">Guess</button>
     <div id="timer">Time: 0 seconds</div>
 
-    
+
     <div class="stats-logo-container">
         <a href="javascript:void(0)" onclick="showStats()" class="stats-link">My Stats</a>
         <a href="../index.html" class="logo-link">
@@ -23,9 +26,11 @@
         </a>
         <a href="../includes/instructions.html" class="stats-link">How to Play</a>
     </div>
+
     <footer>
         <p>&copy; 2024 Wordle Itamar, Hadar and Timor All rights reserved.</p>
     </footer>
     <script src="../JS/gameScript.js"></script>
 </body>
+
 </html>
