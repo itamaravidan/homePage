@@ -13,7 +13,6 @@ function displayFormHistory() {
         return;
     }
 
-    // Build HTML for displaying form history
     const historyHTML = formHistory.map(form => `
     <div class="form-entry">
        <p> your personal information: <p> 

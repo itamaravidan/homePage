@@ -298,11 +298,11 @@ footer .border-top {
   }
   
   .preview-wrapper .game-preview {
-    background-size: contain; /* Ensures the image covers the element */
+    background-size: contain; 
     background-repeat: no-repeat;
-    background-position: center center; /* Centers the background image */
+    background-position: center center; 
     height: 0;
-    padding-top: 56.25%; /* Maintains a 16:9 aspect ratio */
+    padding-top: 56.25%;
     position: relative;
 }
 
@@ -322,16 +322,14 @@ footer .border-top {
   
  
   @media (max-width: 992px) {
-    /* Adjustments for tablets and medium-sized devices */
     .preview-wrapper .game-preview {
-        padding-top: 75%; /* You may adjust this to fit your specific aspect ratio */
+        padding-top: 75%; 
     }
 }
 
 @media (max-width: 768px) {
-    /* Adjustments for mobile and small-sized devices */
     .preview-wrapper .game-preview {
-        padding-top: 100%; /* You may adjust this to fit your specific aspect ratio */
+        padding-top: 100%; 
     }
 
     footer .row {
@@ -345,7 +343,6 @@ footer .border-top {
     }
 }
 
-/* Additional responsive image settings for smaller screens */
 @media (max-width: 576px) {
     .team-member {
         flex: 0 0 100%;
@@ -360,7 +357,7 @@ footer .border-top {
     gap: 20px;
     padding: 20px;
     padding: 40px 0;
-    background: #fff; /* Adjust the background as needed */
+    background: #fff; 
     padding: 40px 0;
     flex-direction: column;
 
@@ -391,7 +388,7 @@ footer .border-top {
 
 .team-photo {
     border-radius: 50%;
-    max-width: 100px; /* Adjust the size as needed */
+    max-width: 100px; 
     margin-bottom: 15px;
   }
 
@@ -452,19 +449,19 @@ h3 {
 }
 
 .about-section {
-    background: #f8f9fa; /* Adjust the background color as needed */
+    background: #f8f9fa; 
     padding: 20px 0;
   }
   
   .about-title {
     margin-bottom: 30px;
-    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-size: 2.5rem; 
   }
   
   .team-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px; /* This will give space between the team-member cards if they wrap */
+    gap: 20px; 
   }
   
