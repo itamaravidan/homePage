@@ -12,6 +12,24 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
+        const name = form.querySelector('#name').value.trim();
+        const email = form.querySelector('#email').value.trim();
+        if ( !email) {
+            alert('Please fill in your email.');
+            return;
+        }
+        if (!name) {
+            alert('Please fill in your name.');
+            return;
+        }
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+
         // Create FormData object from the form
         const formData = new FormData(form);
 
