@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('questionnaireInsights', insights);
 
         // Redirect to the insights page
-        window.location.href = '../includes/questionnaireInsights.html'; // Update this path to the correct location of your insights page
+        window.location.href = '../includes/questionnaireInsights.html'; 
     });
 });
 
