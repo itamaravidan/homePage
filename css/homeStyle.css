@@ -298,13 +298,14 @@ footer .border-top {
   }
   
   .preview-wrapper .game-preview {
-    background-size: contain; 
+    background-size: contain; /* Ensures the image covers the element */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center; /* Centers the background image */
     height: 0;
-    padding-bottom: 56.25%; 
+    padding-top: 56.25%; /* Maintains a 16:9 aspect ratio */
     position: relative;
-  }
+}
+
   
   .content-description {
     margin-top: 10px;
@@ -320,15 +321,36 @@ footer .border-top {
   }
   
  
-  @media (max-width: 767px) {
-    .video-wrapper, .preview-wrapper {
-      margin-bottom: 30px;
-    }
-  
+  @media (max-width: 992px) {
+    /* Adjustments for tablets and medium-sized devices */
     .preview-wrapper .game-preview {
-      background-size: cover; 
+        padding-top: 75%; /* You may adjust this to fit your specific aspect ratio */
     }
-  }
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for mobile and small-sized devices */
+    .preview-wrapper .game-preview {
+        padding-top: 100%; /* You may adjust this to fit your specific aspect ratio */
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    .article-thumbnails .column,
+    .statistics .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Additional responsive image settings for smaller screens */
+@media (max-width: 576px) {
+    .team-member {
+        flex: 0 0 100%;
+    }
+}
 
 
   .about-container {
