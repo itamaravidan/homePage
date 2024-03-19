@@ -1,9 +1,7 @@
-// Function to retrieve form history from local storage
 function getFormHistory() {
     return JSON.parse(localStorage.getItem('formHistory')) || [];
 }
 
-// Function to display form history
 function displayFormHistory() {
     const formHistory = getFormHistory();
     const formHistoryContainer = document.getElementById('formHistoryContainer');
