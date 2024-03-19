@@ -162,7 +162,7 @@ h2 {
 }
 
 
-/* Modal (background) */
+/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -172,35 +172,95 @@ h2 {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+    background-color: rgba(0,0,0,0.6); /* Black with opacity */
 }
 
-/* Modal Content */
+/* Modal Content Box */
 .modal-content {
+    position: relative;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px; /* Maximum width */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes modalopen {
+    from {top: -300px; opacity: 0}
+    to {top: 10%; opacity: 1}
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    color: #aaaaaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Instructions Link Style */
-.instructions-link {
-    /* Add your button styling here */
+/* Modal Heading */
+.modal-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Modal Paragraph and List */
+.modal-content p,
+.modal-content ol {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.modal-content ol {
+    padding-left: 20px;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+}
+
+/* Button to open modal */
+#instructionsButton {
+    background-color: 2196f3; /* Dark gray */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#instructionsButton:hover {
+    background-color: #777; /* Lighter gray */
+}
+
+.button-style {
+    background-color: #1976d2; /* Dark gray */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* This is for <a> tags */
+    display: inline-block; /* To apply padding and margins to <a> tags */
+    margin-right: 10px; /* Add space between buttons if necessary */
+}
+
+.button-style:hover {
+    background-color: #777; /* Lighter gray */
 }
