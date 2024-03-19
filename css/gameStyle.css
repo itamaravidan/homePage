@@ -177,12 +177,11 @@ h2 {
 
 /* Modal Content Box */
 .modal-content {
-    position: relative;
     background-color: #fefefe;
     margin: 10% auto; /* 10% from the top and centered */
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
-    width: 90%;
+    width: 80%; /* Responsive width */
     max-width: 600px; /* Maximum width */
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     animation-name: modalopen;
@@ -194,6 +193,22 @@ h2 {
     from {top: -300px; opacity: 0}
     to {top: 10%; opacity: 1}
 }
+
+@media (max-width: 768px) {
+    .modal-content {
+      width: 90%; /* Slightly more width on smaller devices */
+      margin: 20% auto; /* More margin from the top */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      width: 95%; /* Use most of the screen width */
+      margin: 25% auto; /* More margin from the top */
+      padding: 10px; /* Less padding to save space */
+    }
+  }
+  
 
 /* The Close Button */
 .close {
