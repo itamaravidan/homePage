@@ -12,14 +12,32 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Analyze the answers
-        const insights = analyzeAnswers(answers);
+        // Create FormData object from the form
+        const formData = new FormData(form);
 
-        // Save the insights to localStorage
-        localStorage.setItem('questionnaireInsights', insights);
+        // Send the form data to the server using fetch
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Handle the response data
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        })
+        .finally(() => {
+            // Analyze the answers
+            const insights = analyzeAnswers(answers);
 
-        // Redirect to the insights page
-        window.location.href = '../includes/questionnaireInsights.html'; 
+            // Save the insights to localStorage
+            localStorage.setItem('questionnaireInsights', insights);
+
+            // Redirect to the insights page
+            window.location.href = '../includes/questionnaireInsights.html';
+        });
     });
 });
 
